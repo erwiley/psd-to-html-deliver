@@ -1,0 +1,107 @@
+.nav-secondary{
+  width:$page-width;
+  height:600px;
+  margin: 0px auto;
+
+  .nav-secondary-logo-contacts .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:30px;
+    padding-bottom:15px;
+
+    .site-logo{
+      font-family: 'Pacifico', cursive;
+      color: #666262;
+      font-size: 40px;
+    }
+
+    ul{
+      list-style: none;
+
+      li{
+        .twitter-icon{
+          width:17px;
+          height:13px;
+        }
+
+        .facebook-icon{
+          width:10px;
+          height:18px;
+        }
+
+        .rss-icon{
+          width:15px;
+          height:15px;
+        }
+      }
+  
+      li:nth-child(odd){
+        background-color: rgba(212, 212, 212, 1);
+        border-radius: 50%;
+        
+        display: table-cell;
+        height: 35px;
+        text-align: center;
+        width: 35px;
+        vertical-align: middle;
+      }
+
+      li:nth-child(even){
+        display: table-cell;
+        height: 35px;
+        text-align: center;
+        width: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .nav-secondary-links{
+    nav{
+      font-family: Arial;
+      text-transform: uppercase;
+      font-size: 18px;
+      border-top: solid 1px #cccccc;
+
+      ul{
+        list-style: none;
+        display: flex;
+        padding-top:25px;
+        padding-bottom:30px;
+  
+        li{
+          margin-right:40px;
+
+          a{
+            outline: none;
+            text-decoration: none;
+          }
+          
+          a:link, a:visited{
+            color:#666262;
+          }
+
+          a.active-link{
+            color:#87B672;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-secondary-page-title{
+    background-image: url("../img/secondary-banner.png");
+    height: 100px;
+
+    h1{
+      font-family: Arial;
+      text-transform: uppercase;
+      font-size: 36px;
+      color:white;
+      padding-top:30px;
+    }
+  }
+
+
+}

@@ -1,0 +1,222 @@
+#home-page{
+  header{
+    width:$page-width;
+    height:600px;
+    background-image: url("../img/home/top-banner.png");  
+    background-position: center;
+    margin: 0px auto;
+  
+    .top-info{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top:30px;
+      padding-bottom:15px;
+  
+      .site-logo{
+        font-family: 'Pacifico', cursive;
+        color: white;
+        font-size: 40px;
+      }
+  
+      ul{
+        list-style: none;
+  
+        li{
+          .twitter-icon{
+            width:17px;
+            height:13px;
+          }
+  
+          .facebook-icon{
+            width:10px;
+            height:18px;
+          }
+  
+          .rss-icon{
+            width:15px;
+            height:15px;
+          }
+        }
+    
+        li:nth-child(odd){
+          background-color: rgba(254, 254, 254, 0.7);
+          border-radius: 50%;
+          
+          display: table-cell;
+          height: 35px;
+          text-align: center;
+          width: 35px;
+          vertical-align: middle;
+        }
+  
+        li:nth-child(even){
+          display: table-cell;
+          height: 35px;
+          text-align: center;
+          width: 10px;
+          vertical-align: middle;
+        }
+      }
+    }
+  
+    nav{
+      font-family: Arial;
+      text-transform: uppercase;
+      font-size: 18px;
+      border-top: solid 1px white;
+
+      ul{
+        list-style: none;
+        display: flex;
+        padding-top:25px;
+        padding-bottom:135px;
+  
+        li{
+          margin-right:40px;
+
+          a{
+            outline: none;
+            text-decoration: none;
+          }
+          
+          a:link, a:visited{
+            color:white;;
+          }
+
+          a.active-link{
+            color:#87B672;
+          }
+        }
+      }
+    }
+  
+    h1{
+      color:white;
+      font-family: Arial;
+      text-transform: uppercase;
+      text-align: center;
+  
+      span{
+        color:#87B672;
+      }
+    }
+  
+    p{
+      color:white;
+      font-size: 20px;
+      font-weight: lighter;
+      font-family: Verdana, Tahoma, sans-serif;
+      text-align: center;
+      padding-top:30px;
+      padding-bottom:30px;
+    }
+  
+    .btn-center{
+      display: flex; 
+        justify-content: center;
+  
+      .btn{
+        cursor: pointer; 
+        border: 2px solid white; 
+        background-color: transparent; 
+        height: 44px; 
+        width: 140px; 
+        color: white; 
+        font-family: Arial;
+        font-size: 14px; 
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
+  
+  main{
+    section{
+      &.team{
+        width:$page-width;
+        height:580px;
+        margin: 0px auto;
+        background-color: #fefefe;
+  
+        h2{
+          color:#666262;
+          font-family: Arial;
+          text-transform: uppercase;
+          text-align: center;
+        }
+  
+        .services-info{
+          display: flex; 
+          justify-content: space-between; 
+          text-align: center;
+  
+          .service-card{
+            width:30%;
+            background-color: lightskyblue;
+          }
+        }
+      }
+  
+      &.work{
+        width:$page-width;
+        height:750px;
+        margin: 0px auto;
+        background-color: #efefef;
+  
+        h2{
+          color:#666262;
+          font-family: Arial;
+          text-transform: uppercase;
+          text-align: center;
+        }
+  
+        .work-info{
+          display: flex; 
+          justify-content: space-between; 
+          text-align: center;
+  
+          .work-card{
+            width:30%;
+            background-color: lightskyblue;
+          }
+        }
+  
+        .btn-center{
+          display: flex; 
+          justify-content: center;
+      
+          .btn{
+            cursor: pointer; 
+            height: 44px; 
+            width: 140px; 
+            color: white; 
+            background-color: #87B672;
+            border:none;
+            font-family: Arial;
+            font-size: 14px; 
+            font-weight: bolder;
+            text-transform: uppercase;
+            text-align: center;
+          }
+        }
+  
+      }
+    }
+  }
+  
+  footer{
+    width:$page-width;
+    height:350px;
+    margin: 0px auto;
+    background-color:#333333;
+  
+    .info-row{
+      display: flex; 
+      justify-content: space-between; 
+  
+    }
+  }
+  
+}
