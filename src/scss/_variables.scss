@@ -1,1 +1,24 @@
 $page-width:1600px;
+
+@mixin section-heading {
+  font-family: Arial, sans-serif;
+  font-size:22px;
+  color:#666262;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin paragraph-heading {
+  font-family: Arial, sans-serif;
+  font-size:18px;
+  color:#666262;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin section-paragraph-message{
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  color: #9B9999;
+}
