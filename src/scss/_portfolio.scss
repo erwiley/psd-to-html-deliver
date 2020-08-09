@@ -1,0 +1,128 @@
+#portfolio-page{
+
+  section.main-heading{
+    width:$page-width;
+    height:280px;
+    margin: 0px auto;
+    background-color: #fefefe;
+
+    .heading{
+      border-bottom: solid 1px #CCCCCC;
+
+      h2{
+        @include section-heading;
+        margin-top:50px;
+        margin-bottom:30px;
+      }
+
+      p{
+        @include section-paragraph-message;
+        text-align: center;
+        width:850px;
+        margin: 0px auto 40px auto;
+      }
+    }
+
+    .tags{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: bolder;
+      color:#5F5B5B;
+      padding-top: 50px;
+
+      span{
+        color:#87B672;
+      }
+    }
+  
+  }
+
+  section.previous-jobs{
+
+    .portfolio-outer-row{
+      width:$page-width;
+      margin: 0px auto;
+      position: relative;
+
+      .background-area{
+        position: absolute;
+        top:0px;
+        left:0px;
+        width:100%;
+        height:294px;
+        z-index: -1;
+        background-color: #EFEFEF;
+      }
+
+      .portfolio-card-row{
+        display:flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+  
+        .portfolio-card{
+          width:30%;
+          font-family: Arial, Helvetica, sans-serif;
+
+          h4{
+            color:#5F5B5B;
+            text-transform: uppercase;
+            padding-top: 28px;
+            padding-bottom: 10px;
+            padding-left: 36px;
+          }
+
+          p{
+            color:#8F8F8F;
+            line-height: 26px;
+            padding-left: 36px;
+            padding-bottom: 20px;
+
+          }
+        }
+      }
+    }    
+  }
+
+  section.need-website{
+    padding-bottom:50px;
+
+    .website-heading{
+
+      .divider{
+        height:2px;
+        background-color:#CCCCCC;
+        margin-top: 30px;
+      }
+
+      h2{
+        @include section-heading;
+        margin-top:50px;
+        margin-bottom:30px;
+      }
+
+      p{
+        @include section-paragraph-message;
+        text-align: center;
+        width:850px;
+        margin: 0px auto 40px auto;
+      }
+    }
+
+    .btn-center{
+      display: flex; 
+      justify-content: center;
+  
+      .btn{
+        cursor: pointer; 
+        padding:10px 16px;
+        color: white; 
+        background-color: #87B672;
+        border:none;
+        font-family: Arial;
+        font-size: 14px; 
+        font-weight: bolder;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
