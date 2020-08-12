@@ -22,3 +22,16 @@ $page-width:1600px;
   line-height: 25px;
   color: #9B9999;
 }
+
+@mixin green-button {
+  cursor: pointer; 
+  padding:10px 16px;
+  color: white; 
+  background-color: #87B672;
+  border:none;
+  font-family: Arial;
+  font-size: 14px; 
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: center;
+}
