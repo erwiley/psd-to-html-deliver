@@ -1,0 +1,139 @@
+#services-page{
+
+  section.services{
+    padding-top:56px;
+  }
+
+  .service-cards{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .service-card{
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 30px;
+  
+      .card-left{
+        width:76px;
+        height:120px;
+        float:left;
+  
+        img{
+          width:76px;
+          height:76px;
+          background-color: white;
+          //background-size: cover;
+        }
+      }
+  
+      .card-right{
+        width:480px;
+        height:120px;
+        padding-left: 110px;
+  
+        h3{
+          color:#666262;
+          text-transform: uppercase;
+          margin-bottom: 16px;
+        }
+  
+        p{
+          @include  section-paragraph-message;
+        }
+      }   
+    }
+  }
+
+  section.pricing{
+    background-color: #EFEFEF;
+    height:580px;
+    width:$page-width;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  section.table{
+    margin-top:-360px;
+    padding-bottom: 60px;
+  }
+
+  .pricing-cards{
+    display:flex;
+    //justify-content: space-between;
+    font-family: Arial, sans-serif;
+
+    .price-card{
+      text-align: center;
+      width:292px;
+      margin-right: 4px;
+
+      h2{
+        background-color: #87B672;
+        color:white;
+        padding:12px;
+      }
+
+      p{
+        background-color: white;
+        color:#8F8F8F;
+        padding:12px;
+      }
+
+      p:first-of-type{
+        color:#666262;
+        font-weight: bold;
+        font-size: 38px;
+      }
+
+      .semi-border-bottom{
+        width:90%;
+        height:1px;
+        background-color: #C2C2C2;
+        margin:0px auto;
+      }
+
+      .btn-center-temp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #87B672;
+        height:78px;
+      }
+
+      .btn{
+        @include green-button;
+        background-color: #A5C895;
+      }
+    }
+
+    .price-card:last-of-type{
+      margin-right: 0px;
+    }
+  }
+
+  section.more-info{
+    padding-bottom: 60px;
+
+    .card-row{
+      display:flex;
+      justify-content: space-between;
+      padding-top:60px;
+
+      .card{
+        font-family: Arial, sans-serif;
+        width:350px;
+
+        h3{
+          text-transform: uppercase;
+          color:#5F5B5B;
+          margin-bottom:20px;
+        }
+
+        p{
+          color:#8F8F8F;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

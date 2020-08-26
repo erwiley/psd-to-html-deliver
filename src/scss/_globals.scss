@@ -8,3 +8,39 @@
   width:1180px;
   margin: 0px auto;
 }
+
+.top-border{
+  border-top: solid 1px #CCCCCC; 
+}
+
+.bottom-border{
+  border-bottom: solid 1px #CCCCCC;
+}
+
+section.message{
+  h2{
+    @include section-heading;
+    //margin-top:50px;
+    padding-top:50px;
+    margin-bottom:30px;
+  }
+
+  p{
+    @include section-paragraph-message;
+    text-align: center;
+    width:850px;
+    margin: 0px auto 40px auto;
+  }
+}
+
+section.button{
+  .btn-center{
+    display: flex; 
+    justify-content: center;
+
+    .btn{
+      @include green-button;
+      margin-bottom:60px;
+    }
+  }
+}
