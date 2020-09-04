@@ -5,6 +5,19 @@
     background-image: url("../img/home/top-banner.png");  
     background-position: center;
     margin: 0px auto;
+
+    a{
+      outline: none;
+      text-decoration: none;
+    }
+    
+    a:link, a:visited{
+      color:white;;
+    }
+
+    a.active-link{
+      color:#87B672;
+    }
   
     .top-info{
       display: flex;
@@ -74,19 +87,6 @@
   
         li{
           margin-right:40px;
-
-          a{
-            outline: none;
-            text-decoration: none;
-          }
-          
-          a:link, a:visited{
-            color:white;;
-          }
-
-          a.active-link{
-            color:#87B672;
-          }
         }
       }
     }
@@ -114,7 +114,7 @@
   
     .btn-center{
       display: flex; 
-        justify-content: center;
+      justify-content: center;
   
       .btn{
         cursor: pointer; 
@@ -128,6 +128,7 @@
         font-weight: bolder;
         text-transform: uppercase;
         text-align: center;
+        padding-top:10px;
       }
     }
   }
@@ -197,12 +198,10 @@
       display: flex; 
       justify-content: space-between; 
       text-align: center;
-      //border-bottom: solid 1px #CCCCCC;
       margin-top: -186px;
 
       .work-card{
         width:30%;
-        //background-color: lightskyblue;
 
         span{
           @include paragraph-heading;
