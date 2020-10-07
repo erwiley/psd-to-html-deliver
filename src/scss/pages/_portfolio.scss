@@ -1,4 +1,4 @@
-#portfolio-page{
+main.portfolio-page{
 
   .tags{
     font-family: Arial, Helvetica, sans-serif;
@@ -16,7 +16,6 @@
   section.previous-jobs{
 
     .portfolio-outer-row{
-      width:$page-width;
       margin: 0px auto;
       position: relative;
 
@@ -34,28 +33,54 @@
         display:flex;
         justify-content: space-between;
         margin-bottom: 50px;
+
+        @include for-phone-only { flex-wrap: wrap; }
+        @include for-tablet-only { justify-content: space-around; }
   
         .portfolio-card{
           width:30%;
-          font-family: Arial, Helvetica, sans-serif;
+
+          @include for-phone-only { width:100%; }
+          @include for-tablet-only { width:40%; }
 
           h4{
-            color:#5F5B5B;
-            text-transform: uppercase;
+            @include text-heading-md;
+            @include text-gray-two;
             padding-top: 28px;
             padding-bottom: 10px;
             padding-left: 36px;
           }
 
           p{
-            color:#8F8F8F;
-            line-height: 26px;
+            @include text-body;
+            @include text-gray-four;
             padding-left: 36px;
             padding-bottom: 20px;
 
           }
+
+          @include for-phone-and-tablet {
+            img{
+              width:80%;
+            }
+          }
         }
+
+        @include for-tablet-only {
+          .portfolio-card:nth-child(1){
+            display:none;
+          }
+        } 
       }
-    }    
+    }  
+    
+    @include for-phone-only {
+      .portfolio-outer-row:nth-child(2),
+      .portfolio-outer-row:nth-child(3),
+      .portfolio-outer-row:nth-child(4)
+      {
+        display:none;
+      }
+    }
   }
 }

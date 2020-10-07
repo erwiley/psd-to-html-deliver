@@ -1,0 +1,35 @@
+.intro {
+
+  &__title {
+    font-family: NovecentoWide, Arial, sans-serif;
+    font-size:22px;
+    font-weight: 600;
+    color:#666262;
+    text-transform: uppercase;
+    padding-top:50px;
+    margin-bottom:30px;
+
+    @include for-phone-only { font-size:20px; }
+    // @include for-tablet-only {  }
+  } 
+
+  &__title--color-one{
+    color: #5f5b5b;
+  }
+  
+  &__message {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #9B9999;
+    width:850px;
+    margin: 0px auto 40px auto;
+
+    @include for-phone-only { width: 90%; }
+    @include for-tablet-only { width: 80%; }
+  }
+
+  &__message--color-one{
+    color: #8f8f8f;
+  }
+}

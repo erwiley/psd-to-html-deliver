@@ -1,11 +1,61 @@
-@import 'variables';
-@import 'globals';
-@import 'nav_secondary';
-@import 'footer';
-@import 'home';
-@import 'portfolio';
-@import 'about';
-@import 'services';
-@import 'archive';
-@import 'blog';
-@import 'contact';
+@import 'config/variables';  
+@import 'config/mixins';     
+         
+@import 'base/resets';
+@import 'base/utilities';
+@import 'base/fonts';
+//@import 'base/grid';
+
+// @import 'layout/header';
+// @import 'layout/navigation';
+@import 'layout/header-hero';
+@import 'layout/nav_secondary';
+@import 'layout/footer';
+@import 'layout/layout';
+// @import 'layout/sidebar';
+// @import 'layout/form';
+
+@import 'components/buttons';
+@import 'components/intro';
+// @import 'components/dropdown';
+// @import 'components/popup';
+// @import 'components/carousel';
+
+@import 'pages/home';
+@import 'pages/portfolio';
+@import 'pages/about';
+@import 'pages/services';
+@import 'pages/archive';
+@import 'pages/blog';
+@import 'pages/contact';
+
+// @import 'vendors/bootstrap';
+// @import 'vendors/jquery-ui';
+
+
+//Home Page: Service Title
+// font-size: 18px;
+// font-weight: bold;
+// font-family: "Novecentowide";
+// line-height: 22px;
+// color: #666262;                  //color: #5f5b5b;
+
+//Home Page: Service Message
+// font-size: 16px;
+// font-family: "Helvetica Neue";
+// line-height: 24px;
+// color: #9b9999;                  //color: #8f8f8f;
+
+//Home Page: Service Link
+// font-size: 16px;
+// font-family: "Helvetica Neue";
+// line-height: 24px;
+// color: #87b672;
+
+//Home Page: Work Image Caption
+// font-size: 18px;
+// font-family: "Novecentowide";
+// font-weight: bold;
+// color: #666262;
+// line-height: 24px;
+

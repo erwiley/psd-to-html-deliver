@@ -1,0 +1,100 @@
+main.contact-page{
+
+  .cols{
+    display:flex;
+
+    @include for-phone-and-tablet { flex-wrap: wrap; }
+
+    h3{
+      @include text-heading-md;
+      @include text-gray-two;
+      padding-bottom: 20px;
+    }
+    
+    h4{
+      @include text-heading-sm;
+      @include text-gray-two;
+      text-transform: uppercase;
+    }
+  
+    p{
+      @include text-body;
+      @include text-gray-four;
+    }
+
+    .main-left-col{
+      width:70%;
+      padding-right:40px;
+
+      @include for-phone-and-tablet { 
+        width:100%; 
+        padding-bottom: 40px;
+      }
+      
+      form{
+
+        p{
+          @include text-body-sm;
+          @include text-gray-four;
+        }
+
+        span{
+          color:red;
+        }
+    
+        input[type=text], 
+        input[type=email],
+        textarea {
+          border: none;
+          background-color: #EFEFEF;
+        }
+    
+        input[type=text], input[type=email]{
+          width: 45%;
+          padding: 11px;
+          margin-bottom: 20px;
+          display: inline-block;
+
+          @include for-phone-and-tablet { width:85%; }
+        }
+    
+        textarea{
+          width: 85%;
+          height: 290px;
+          margin-bottom: 20px;
+          resize: none;
+        }
+      }
+    }
+
+    .main-right-col{
+      width:30%;
+      padding-right:16px;
+
+      @include for-phone-and-tablet { width:100%; }
+      
+      section.location{
+        
+        p:first-of-type{
+          padding-bottom: 20px;
+        }
+      }
+    
+      section.info{
+    
+        .left-col{
+          width:50%;
+    
+          p{ font-weight:600; }
+        }
+    
+        .right-col{ width:50%; }
+      }
+    
+      section.office{
+        .left-col{ width:60%; }
+        .right-col{ width:40%; }
+      }
+    }
+  } 
+}

@@ -1,0 +1,23 @@
+header,
+main,
+footer{
+  width:1600px;
+  margin: 0px auto;
+
+  @include for-phone-and-tablet{ width:100%; }
+}
+
+.container{
+  width:1180px;
+  margin: 0px auto;
+
+  @include for-phone-and-tablet{ width:96%; }
+}
+
+.border-top{
+  border-top: solid 1px #CCCCCC; 
+}
+
+.border-bottom{
+  border-bottom: solid 1px #CCCCCC;
+}

@@ -1,4 +1,4 @@
-#services-page{
+main.services-page{
 
   section.services{
     padding-top:56px;
@@ -9,6 +9,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
+    @include for-phone-and-tablet{ justify-content: space-around; }
+
     .service-card{
       font-family: Arial, Helvetica, sans-serif;
       margin-bottom: 30px;
@@ -17,12 +19,18 @@
         width:76px;
         height:120px;
         float:left;
+
+        @include for-phone-only{ width:66px; }
   
         img{
           width:76px;
           height:76px;
           background-color: white;
-          //background-size: cover;
+          
+          @include for-phone-only{ 
+            width:66px; 
+            height:66px; 
+          }
         }
       }
   
@@ -30,15 +38,22 @@
         width:480px;
         height:120px;
         padding-left: 110px;
+
+        @include for-phone-only{ 
+          width:330px; 
+          height:150px;
+        }
   
         h3{
-          color:#666262;
+          @include text-heading-md;
+          @include text-gray-one;
           text-transform: uppercase;
           margin-bottom: 16px;
         }
   
         p{
-          @include  section-paragraph-message;
+          @include text-body;
+          @include text-gray-four;
         }
       }   
     }
@@ -47,7 +62,6 @@
   section.pricing{
     background-color: #EFEFEF;
     height:580px;
-    width:$page-width;
     margin-left:auto;
     margin-right:auto;
   }
@@ -62,10 +76,17 @@
     //justify-content: space-between;
     font-family: Arial, sans-serif;
 
+    @include for-phone-only{ flex-wrap:wrap;}
+
     .price-card{
       text-align: center;
       width:292px;
       margin-right: 4px;
+
+      @include for-phone-only{ 
+        width:100%; 
+        margin-top: 40px;
+      }
 
       h2{
         background-color: #87B672;
@@ -99,11 +120,6 @@
         background-color: #87B672;
         height:78px;
       }
-
-      .btn{
-        @include green-button;
-        background-color: #A5C895;
-      }
     }
 
     .price-card:last-of-type{
@@ -119,19 +135,26 @@
       justify-content: space-between;
       padding-top:60px;
 
+      @include for-phone-only{ flex-wrap:wrap;}
+
       .card{
         font-family: Arial, sans-serif;
         width:350px;
 
+        @include for-phone-only{ width:100%; }
+
         h3{
+          @include text-heading-md;
+          @include text-gray-two;
           text-transform: uppercase;
-          color:#5F5B5B;
           margin-bottom:20px;
         }
 
         p{
-          color:#8F8F8F;
-          line-height: 24px;
+          @include text-body;
+          @include text-gray-four;
+
+          @include for-phone-only{ margin-bottom:30px; }
         }
       }
     }

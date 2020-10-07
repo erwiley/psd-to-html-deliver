@@ -1,0 +1,59 @@
+@mixin for-phone-only {
+  @media (max-width: $breakpoint-phone) { @content; }
+}
+@mixin for-tablet-only {
+  @media (min-width: $breakpoint-phone + 1 ) and (max-width: $breakpoint-desktop) { @content; }
+}
+@mixin for-phone-and-tablet {
+  @media (max-width: $breakpoint-desktop) { @content; }
+}
+@mixin for-desktop-only {
+  @media (min-width: $breakpoint-desktop + 1 ) { @content; }
+}
+
+//@include for-phone-only {}
+//@include for-tablet-only {}
+//@include for-phone-and-tablet {}
+//@include for-desktop-only {}
+
+@mixin text-heading-md{
+  font-family: NovecentoWide, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+@mixin text-heading-sm{
+  font-family: NovecentoWide, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+@mixin text-body{
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin text-body-sm{
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@mixin text-gray-one{
+  color: #666262;
+}
+
+@mixin text-gray-two{
+  color: #5f5b5b;
+}
+
+@mixin text-gray-three{
+  color: #9b9999; 
+}
+
+@mixin text-gray-four{
+  color: #8f8f8f;
+}

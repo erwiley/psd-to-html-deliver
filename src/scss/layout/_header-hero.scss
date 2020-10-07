@@ -1,0 +1,151 @@
+header.hero{
+  height:600px;
+  background-image: url("../img/home/top-banner.png");  
+  background-position: center;
+  margin: 0px auto;
+
+  //@include for-phone-only { height:600px; }
+  @include for-tablet-only { height:500px; }
+
+  a{
+    outline: none;
+    text-decoration: none;
+  }
+  
+  a:link, a:visited{
+    color:white;;
+  }
+
+  a.active-link{
+    color:#87B672;
+  }
+
+  .top-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:30px;
+    padding-bottom:15px;
+
+    .site-logo{
+      font-family: 'Pacifico', cursive;
+      color: white;
+      font-size: 40px;
+    }
+
+    ul{
+      list-style: none;
+
+      li{
+        .twitter-icon{
+          width:17px;
+          height:13px;
+        }
+
+        .facebook-icon{
+          width:10px;
+          height:18px;
+        }
+
+        .rss-icon{
+          width:15px;
+          height:15px;
+        }
+      }
+  
+      li:nth-child(odd){
+        background-color: rgba(254, 254, 254, 0.7);
+        border-radius: 50%;
+        
+        display: table-cell;
+        height: 35px;
+        text-align: center;
+        width: 35px;
+        vertical-align: middle;
+      }
+
+      li:nth-child(even){
+        display: table-cell;
+        height: 35px;
+        text-align: center;
+        width: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  nav{
+    font-family: Arial;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-top: solid 1px white;
+
+    @include for-phone-only { 
+      padding-bottom:48px;
+    }
+
+    ul{
+      list-style: none;
+      display: flex;
+      padding-top:25px;
+      padding-bottom:135px;
+
+      @include for-phone-only { display: initial; }
+
+      @include for-tablet-only { padding-bottom:80px; }
+
+      li{
+        margin-right:40px;
+
+        @include for-phone-only { 
+          display: block; 
+          text-align: center;
+          margin-right:0px;
+          border-bottom: solid 1px white;
+          background-color: rgba(0, 0, 0, 0.4);
+        }
+        @include for-tablet-only { margin-right:35px; }
+      }
+    }
+  }
+
+  h1{
+    color:white;
+    font-family: Arial;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include for-phone-only { font-size: 28px; }
+
+    span{
+      color:#87B672;
+    }
+  }
+
+  p{
+    color:white;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: center;
+    padding-top:30px;
+    padding-bottom:30px;
+  }
+
+  .hero-btn{
+    cursor: pointer; 
+    border: 2px solid white; 
+    background-color: transparent; 
+    height: 44px; 
+    width: 140px; 
+    color: white; 
+    font-family: Arial;
+    font-size: 14px; 
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top:10px;
+  }
+  
+}

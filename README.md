@@ -1,5 +1,7 @@
-## PSD to single page website
+## A PSD to multi-page website project
 
-Webpage deployed [here](https://erwiley.github.io/psd-to-html-deliver/).
+A web development project to create webpages from a Photoshop template using a Sass Gulp workflow.
+
+Webpages deployed [here](https://erwiley.github.io/psd-to-html-deliver/).
 
 The psd taken from [here](https://freebiesbug.com/psd-freebies/deliver-free-psd-theme/).

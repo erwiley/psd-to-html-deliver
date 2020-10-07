@@ -1,15 +1,17 @@
-#archive-page{
+main.archive-page{
   section{
     padding-bottom:30px;
 
     h2{
-      @include paragraph-heading;
+      @include text-heading-md;
+      @include text-gray-two;
       text-align: left;
       padding-bottom:20px;
     }
 
     p{
-      @include section-paragraph-message;
+      @include text-body;
+      @include text-gray-four;
     }
   }
 
@@ -17,10 +19,17 @@
     display:flex;
     padding-top:50px;
 
+    @include for-phone-only { 
+      flex-wrap:wrap; 
+      padding-top:130px;
+    } 
+
     .left-col{
       width:70%;
       padding-right:40px;
-      //background-color: lightblue;
+
+      @include for-phone-only { width:100%; } 
+      @include for-tablet-only { width:60% ;}
 
       ul{
         list-style: none;
@@ -42,6 +51,9 @@
     .right-col{
       width:30%;
       padding-right:16px;
+
+      @include for-phone-only { width:100%; } 
+      @include for-tablet-only { width:40% ;}
 
       section.popular{
 

@@ -1,0 +1,122 @@
+main.home-page{
+  
+  section.services{
+    height:320px;
+    margin: 0px auto;
+    background-color: #fefefe;
+
+    @include for-phone-only { 
+      height:auto; 
+      padding-top:30px;
+      padding-bottom:30px;
+    }
+
+    @include for-tablet-only { margin-bottom:30px; }
+
+    .services-info{
+      display: flex; 
+      justify-content: space-between; 
+      text-align: center;
+      margin-top:80px;
+
+      @include for-tablet-only { margin-top:40px; }
+      @include for-phone-only { display:initial; }
+
+      .service-card{
+        width:30%;
+
+        @include for-phone-only { width:90%; }
+
+        .img{
+          height:85px;
+          margin-bottom: 20px;
+        }
+        .img2{
+          padding-top:17px;
+        }
+        .img3{
+          padding-top:2px;
+        }
+
+        h3{
+          @include text-heading-md;
+          @include text-gray-one;
+          margin-bottom:20px;
+        }
+
+        p{
+          @include text-body;
+          @include text-gray-three;
+          margin-bottom:20px;
+        }
+        
+        span{
+          font-family: Arial, sans-serif;
+          font-size:16px;
+          color:#87B672;
+          text-align: center;
+        }
+      }
+    }
+  }
+      
+  section.work{
+    height:364px;
+    padding-top:5px;
+    margin: 0px auto;
+    background-color: #efefef;
+
+    @include for-phone-and-tablet { 
+      background-color: #fefefe; 
+      border-top: solid 1px #CCCCCC; 
+    }
+    @include for-phone-only { height: 800px; }
+    @include for-tablet-only { height: 1040px; }
+  }
+
+  section.purchase{
+    height:310px;
+    margin: 0px auto;
+
+    @include for-phone-only { height: 700px; }
+    @include for-tablet-only { height: 800px; }
+
+    .work-info{
+      display: flex; 
+      justify-content: space-between; 
+      text-align: center;
+      margin-top: -166px;
+
+      @include for-phone-and-tablet { display:initial; }
+
+      .work-card{
+        width:30%;
+
+        @include for-phone-and-tablet { 
+          width:auto; 
+          margin-bottom:20px;
+        }
+
+        @include for-phone-only { 
+          img{
+            width: 80%;
+          }
+        }
+
+        span{
+          @include text-heading-md;
+          @include text-gray-one;
+          display: block;
+          margin-top: 20px;
+        }
+      }
+
+      .work-card:first-of-type{
+        margin-top: -16px;
+
+        @include for-phone-only { margin-top: -538px; }
+        @include for-tablet-only { margin-top: -848px; }
+      }
+    }
+  }
+}

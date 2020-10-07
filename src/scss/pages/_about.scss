@@ -1,10 +1,11 @@
-#about-page{
+main.about-page{
 
   section.mission{
-    width:$page-width;
     height:266px;
     margin: 0px auto;
     background-color: #fefefe;
+
+    @include for-phone-and-tablet { height:auto; }
     
     .mission-card-row{
       display:flex;
@@ -12,9 +13,13 @@
       margin-top: 30px;
       margin-bottom: 50px;
 
+      @include for-phone-only { flex-wrap: wrap; }
+
       .mission-card{
         width:30%;
         font-family: Arial, Helvetica, sans-serif;
+
+        @include for-phone-only { width:100%; }
 
         h4{
           color:#5F5B5B;
@@ -33,26 +38,12 @@
   }
 
   section.team{
-    width:$page-width;
     height:680px;
     margin: 0px auto;
-    padding-top: 54px;
     background-color:#EFEFEF;
 
-    .heading{
-      
-      h2{
-        @include section-heading;
-        margin-bottom:18px;
-      }
-
-      p{
-        @include section-paragraph-message;
-        text-align: center;
-        width:850px;
-        margin: 0px auto 40px auto;
-      }
-    }
+    @include for-phone-only{ height:1900px; }
+    @include for-tablet-only{ height:1100px; }
 
     .team-card-row{
       display:flex;
@@ -60,9 +51,14 @@
       padding-top: 20px;
       margin-bottom: 50px;
 
+      @include for-phone-and-tablet{ flex-wrap: wrap;}
+
       .team-card{
         width:22%;
         font-family: Arial, Helvetica, sans-serif;
+
+        @include for-phone-only{ width:100%;}
+        @include for-tablet-only{ width:50%;}
 
         .image{
           width:266px;

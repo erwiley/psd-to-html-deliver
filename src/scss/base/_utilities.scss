@@ -1,0 +1,71 @@
+.text-center{
+  text-align: center;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-white {
+  color: white;
+}
+
+.dflex{
+  display: flex;
+}
+
+.flex-jc-center{
+  justify-content: center;
+}
+
+.flex-jc-space-between{
+  justify-content: space-between; 
+}
+
+.center-item{
+  display: flex; 
+  justify-content: center;
+}
+
+.mt-20{ margin-top: 20px !important; }
+.mt-50{ margin-top: 50px !important; }
+.mt-60{ margin-top:60px !important; }
+.mt-80{ margin-top:80px !important; }
+.mt-100{ margin-top: 100px !important; }
+
+@include for-phone-only {
+  .sm-mt-20{ margin-top: 20px !important; }
+  .sm-mt-50{ margin-top: 50px !important; }
+  .sm-mt-60{ margin-top:60px !important; }
+  .sm-mt-80{ margin-top:80px !important; }
+  .sm-mt-100{ margin-top: 100px !important; }
+}
+
+@include for-tablet-only {
+  .md-mt-20{ margin-top: 20px !important; }
+  .md-mt-50{ margin-top: 50px !important; }
+  .md-mt-60{ margin-top:60px !important; }
+  .md-mt-80{ margin-top:80px !important; }
+  .md-mt-100{ margin-top: 100px !important; }
+}
+
+@include for-desktop-only {
+  .lg-mt-20{ margin-top: 20px !important; }
+  .lg-mt-50{ margin-top: 50px !important; }
+  .lg-mt-60{ margin-top:60px !important; }
+  .lg-mt-80{ margin-top:80px !important; }
+  .lg-mt-100{ margin-top: 100px !important; }
+}
+
+.mb-20{ margin-bottom:20px !important; }
+.mb-50{ margin-bottom:50px !important; }
+.mb-60{ margin-bottom:60px !important; }
+.mb-100{ margin-bottom:100px !important; }
+
+.pt-20{ padding-top:20px !important; }
+.pt-50{ padding-top:50px !important; }
+
+.pb-20{ padding-bottom:20px !important; }
+.pb-50{ padding-bottom:50px !important; }
+
+
